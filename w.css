@@ -1,0 +1,101 @@
+/* Reset default margin/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #6dd5fa, #2980b9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Input + Button container */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Input box */
+#cityInput {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* Button */
+#btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: #ff9800;
+    color: white;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background: #e68900;
+}
+
+/* Loader */
+#loading {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Result */
+#weatherResult {
+    margin-top: 20px;
+    font-size: 20px;
+    background: rgba(255,255,255,0.2);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    word-wrap: break-word;
+}
+
+/*  Mobile screen (max 600px) */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .input-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cityInput, #btn {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #weatherResult {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* Tablet screen (601px - 900px) */
+@media (max-width: 900px) and (min-width: 601px) {
+    #cityInput {
+        width: 60%;
+    }
+
+    #btn {
+        width: 30%;
+    }
+}
