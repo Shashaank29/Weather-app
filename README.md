@@ -29,7 +29,7 @@ A simple and responsive weather application that shows real-time weather data us
 ---
 
 ## 🌐 Live Demo
-https://shashaank29.github.io/Weather-app/
+https://shashaank29.github.io/weather-app/
 
 ---
 
